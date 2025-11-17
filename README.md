@@ -54,14 +54,14 @@ src/
 
 ## 📚 Technologies
 
-- **Java 17+**
+- **Java 21**
 - **Spring Boot 3**
 - Spring Web
 - Spring Data JPA
 - Hibernate
-- MySQL / H2 Database
+-  H2 Database
 - Validation (Jakarta Validation)
-- Lombok (optional)
+- Lombok 
 
 ---
 

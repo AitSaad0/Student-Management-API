@@ -6,11 +6,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.ColumnDefault;
+
+import java.time.Instant;
 
 @Entity
 @Table(name = "students")
 @Getter @Setter
-public class Student extends BaseEntity{
+public class Student{
     @Id
     @Column
     private int student_id;
@@ -35,4 +38,15 @@ public class Student extends BaseEntity{
 
     @Column(nullable = false)
     private String field;
+
+    @ColumnDefault("NULL")
+    @Column(name="created_at",  nullable=false)
+    private Instant createdAt;
+
+    @ColumnDefault("NULL")
+    @Column(name="created_by",  nullable=false)
+    private String createdBy;
+
+    private Instant updatedAt;
+    private Instant updatedBy;
 }
