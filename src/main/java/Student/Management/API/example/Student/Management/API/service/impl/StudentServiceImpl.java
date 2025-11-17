@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class StudentServiceImpl implements StudentService {
 
-    private StudentRepository studentRepository;
+    private final StudentRepository studentRepository;
 
     public Student addStudent(StudentDto studentDto) {
         Student student = new Student();

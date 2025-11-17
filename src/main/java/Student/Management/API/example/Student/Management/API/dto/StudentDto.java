@@ -20,8 +20,4 @@ public class StudentDto {
     private int phone_number;
     private String email;
     private String field;
-    private Instant createdAt;
-    private String createdBy;
-    private Instant updatedAt;
-    private Instant updatedBy;
 }

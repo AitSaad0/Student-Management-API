@@ -39,14 +39,4 @@ public class Student{
     @Column(nullable = false)
     private String field;
 
-    @ColumnDefault("NULL")
-    @Column(name="created_at",  nullable=false)
-    private Instant createdAt;
-
-    @ColumnDefault("NULL")
-    @Column(name="created_by",  nullable=false)
-    private String createdBy;
-
-    private Instant updatedAt;
-    private Instant updatedBy;
 }

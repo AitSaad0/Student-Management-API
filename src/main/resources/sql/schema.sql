@@ -5,11 +5,8 @@ CREATE TABLE IF NOT EXISTS students
     first_name      VARCHAR(250)                          NOT NULL,
     last_name       VARCHAR(500)                          NOT NULL,
     age             INT                                   NOT NULL,
-    phone_number    INT                                   NOT NULL,
+    phone_number    VARCHAR(10)                                   NOT NULL,
     email           VARCHAR(100),
     field           VARCHAR(30)                           NOT NULL,
-    created_at      TIMESTAMP   DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    created_by      VARCHAR(20)                           NOT NULL,
-    updated_at      TIMESTAMP   DEFAULT NULL,
-    updated_by      VARCHAR(20) DEFAULT NULL
+
     );
