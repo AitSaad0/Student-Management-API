@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
@@ -16,7 +17,7 @@ import java.time.Instant;
 public class Student{
     @Id
     @Column
-    private int student_id;
+    private Long student_id;
 
     @Column(nullable = false, unique = true)
     private String apogee;
@@ -31,7 +32,7 @@ public class Student{
     private int age;
 
     @Column(nullable = false)
-    private int phone_number;
+    private String phone_number;
 
     @Column(nullable = false)
     private String email;
