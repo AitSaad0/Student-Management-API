@@ -12,5 +12,7 @@ public interface StudentService {
 
     public StudentDto getStudentById(Long student_id);
 
+    public Student updateStudent(StudentDto studentDto);
+
 
 }

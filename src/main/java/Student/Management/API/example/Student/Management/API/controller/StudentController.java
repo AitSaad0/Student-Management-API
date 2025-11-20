@@ -34,4 +34,10 @@ public class StudentController {
         StudentDto studentDto = studentService.getStudentById(id);
         return ResponseEntity.ok(studentDto);
     }
+
+    @PostMapping("update-student")
+    public ResponseEntity<Student> updateStudent(@Valid @RequestBody StudentDto studentDto){
+        Student student = studentService.updateStudent(studentDto);
+        return  ResponseEntity.status(HttpStatus.CREATED).body(student);
+    }
 }

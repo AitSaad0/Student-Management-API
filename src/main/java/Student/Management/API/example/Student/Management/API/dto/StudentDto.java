@@ -38,7 +38,7 @@ public class StudentDto {
     private int age;
 
     @NotBlank(message = "Phone number is required")
-    @Pattern(regexp = "^\\d{10}$", message = "Phone number must be digit")
+    @Pattern(regexp = "^\\d{10}$", message = "Phone number must be 10 digits")
     private String phone_number;
 
     @NotBlank(message = "Email is required")

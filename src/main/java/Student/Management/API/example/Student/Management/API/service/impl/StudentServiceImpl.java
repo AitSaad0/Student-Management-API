@@ -35,12 +35,23 @@ public class StudentServiceImpl implements StudentService {
     }
 
 
-    //Get Student by Id
+    //Get Student by id
     public StudentDto getStudentById(Long student_id){
         Student student = studentRepository.findById(student_id).
                 orElseThrow(() -> new StudentNotExist("Student with id " + student_id + " does not exist"));
         return transferToDto(student);
     }
+
+
+    //update student
+    public Student updateStudent(StudentDto studentDto) {
+            long id = studentDto.getStudent_id();
+            Student student = studentRepository.findById(id)
+                    .orElseThrow(() -> new StudentNotExist("Student with id " + id + " does not exist"));
+            BeanUtils.copyProperties(studentDto, student, "student_id", "apogee");
+            return studentRepository.save(student);
+    }
+
 
 
     //Transfer student to studentDto
