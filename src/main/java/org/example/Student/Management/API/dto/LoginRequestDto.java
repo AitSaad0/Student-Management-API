@@ -1,4 +1,4 @@
 package org.example.Student.Management.API.dto;
 
-public class LoginRequestDto {
+public record LoginRequestDto(String username, String password) {
 }
