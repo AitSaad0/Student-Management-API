@@ -1,8 +1,8 @@
-package Student.Management.API.example.Student.Management.API.controller;
+package org.example.Student.Management.API.controller;
 
-import Student.Management.API.example.Student.Management.API.dto.StudentDto;
-import Student.Management.API.example.Student.Management.API.entity.Student;
-import Student.Management.API.example.Student.Management.API.service.StudentService;
+import org.example.Student.Management.API.dto.StudentDto;
+import org.example.Student.Management.API.entity.Student;
+import org.example.Student.Management.API.service.StudentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

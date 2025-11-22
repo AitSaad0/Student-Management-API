@@ -1,4 +1,4 @@
-package Student.Management.API.example.Student.Management.API;
+package org.example.Student.Management.API;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

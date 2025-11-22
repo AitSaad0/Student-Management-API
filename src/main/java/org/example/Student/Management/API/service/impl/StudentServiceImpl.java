@@ -1,11 +1,11 @@
-package Student.Management.API.example.Student.Management.API.service.impl;
+package org.example.Student.Management.API.service.impl;
 
-import Student.Management.API.example.Student.Management.API.dto.StudentDto;
-import Student.Management.API.example.Student.Management.API.entity.Student;
-import Student.Management.API.example.Student.Management.API.exception.custumExceptions.StudentAlreadyExistsException;
-import Student.Management.API.example.Student.Management.API.exception.custumExceptions.StudentNotExist;
-import Student.Management.API.example.Student.Management.API.repository.StudentRepository;
-import Student.Management.API.example.Student.Management.API.service.StudentService;
+import org.example.Student.Management.API.dto.StudentDto;
+import org.example.Student.Management.API.entity.Student;
+import org.example.Student.Management.API.exception.custumExceptions.StudentAlreadyExistsException;
+import org.example.Student.Management.API.exception.custumExceptions.StudentNotExist;
+import org.example.Student.Management.API.repository.StudentRepository;
+import org.example.Student.Management.API.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;

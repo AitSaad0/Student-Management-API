@@ -1,7 +1,7 @@
-package Student.Management.API.example.Student.Management.API.service;
+package org.example.Student.Management.API.service;
 
-import Student.Management.API.example.Student.Management.API.dto.StudentDto;
-import Student.Management.API.example.Student.Management.API.entity.Student;
+import org.example.Student.Management.API.dto.StudentDto;
+import org.example.Student.Management.API.entity.Student;
 
 import java.util.List;
 

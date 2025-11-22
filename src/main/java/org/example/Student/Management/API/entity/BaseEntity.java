@@ -1,4 +1,4 @@
-package Student.Management.API.example.Student.Management.API.entity;
+package org.example.Student.Management.API.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

@@ -1,20 +1,16 @@
-package Student.Management.API.example.Student.Management.API.exception;
+package org.example.Student.Management.API.exception;
 
 
-import Student.Management.API.example.Student.Management.API.dto.ErrorDto;
-import Student.Management.API.example.Student.Management.API.exception.custumExceptions.StudentAlreadyExistsException;
-import Student.Management.API.example.Student.Management.API.exception.custumExceptions.StudentNotExist;
-import org.springframework.http.HttpStatus;
+import org.example.Student.Management.API.exception.custumExceptions.StudentAlreadyExistsException;
+import org.example.Student.Management.API.exception.custumExceptions.StudentNotExist;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
