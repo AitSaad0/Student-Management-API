@@ -12,7 +12,7 @@ public class PublicPathConfig {
     @Bean
     public List<String> publicPath() {
        return  List.of(
-                "api/v1/auth"
+                "api/v1/auth/**"
         );
     }
 }
